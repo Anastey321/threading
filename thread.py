@@ -30,7 +30,7 @@ class NumberPrinter(Thread):
 #  RUN FEW THREADS
 
 resource = Resourse()
-for i in range(1000):
+for i in range(20):
     thread = NumberPrinter(i,resource)
     thread.start()
     # thread.join()
