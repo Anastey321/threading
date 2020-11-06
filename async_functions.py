@@ -21,13 +21,13 @@ containers = [get_info(ulr) for ulr in urls]
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete( asyncio.wait(containers) )
-
+print('Finish')
 
 # SIMPLE EXAMPLE
 
-async def any_function():
-    pass
-
-loop = asyncio.get_event_loop()
-loop.run_until_complete( any_function() )
-loop.close()
+# async def any_function():
+#     pass
+#
+# loop = asyncio.get_event_loop()
+# loop.run_until_complete( any_function() )
+# loop.close()
